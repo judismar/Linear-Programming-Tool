@@ -1,0 +1,7 @@
+min diet_cost = 2 milk + 4 meat + 1.5 fish + 1 salad %cost in dollars; each constant represents the price of the corresponding food, in each own units
+
+subject to %the constants in the constraints represent each vitamin amount in mg
+
+2 milk + 2 meat + 10 fish + 20 salad >= 11 %at least 11mg of Vitamin A
+50 milk + 20 meat + 10 fish + 30 salad >= 70 %at least 70mg of Vitamin B
+80 milk + 70 meat + 10 fish + 80 salad >= 250 %at least 250mg of Vitamin C

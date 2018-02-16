@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Uma ferramenta para resolução, estudo e análise de problemas de Programação Linear, Inteira e Binária">
+		<meta name="keywords" content="Programação Matemática, Programação Linear, Programação Inteira, Programação Binária, Ferramenta Web Online, Resolvedor Web Online">
+		<meta name="author" content="Judismar Arpini Junior">
+
+		<title>Ferramenta de Programação Linear: Programação Linear, Programação Inteira e Programação Binária</title>
+
+		<link rel="stylesheet" href="../include/codemirror-3.20/lib/codemirror.css?v=1.0">
+		<link rel="stylesheet" href="../include/layoutlpt.css?v=1.11">
+		<script src="../include/codemirror-3.20/lib/codemirror.js?v=1.0"></script> 
+		<script src="../include/codemirror-3.20/octave/octave.js?v=1.12"></script>
+		<script src="../include/mainscript.js?v=1.13"></script>
+	</head>
+	<body>
+		<script> //definição de variáveis para linguagens diferentes
+			tips = "1) Nomes de variáveis devem iniciar com letras.\n2) Todas as constantes, inclusive fracionárias, devem estar à esquerda da variável (sem parêntesis).\n3) Desconsidere espaço entre operadores, números e variáveis.\n4) Os operadores '+' e '-' podem ser usados para dar sinal a uma constante.\n5) Escreva comentários de linha com '%'.\n6) A seção de limite de variáveis (v.b. ou variable bounds) é opcional; todas as variáveis são maiores ou iguais a zero por padrão.";
+			processing = "Processando...\nProgresso: ";
+			errorMessage = "Erro no servidor.";
+		</script>
+
+		<h2>Ferramenta de Programação Linear</h2>
+
+			<p><a href="../en/lptool.html">In English</a></p>
+			<p><a href="../pt_br/">Página Principal</a></p>
+			<p><a href="info/">Informações Importantes</a></p>
+
+		<div class="maincomponent">
+			<div class="center">
+				<input type="radio" name="programtype" value="-lin" checked>Programa Linear
+				<input type="radio" name="programtype" value="-int">Programa Inteiro
+				<input type="radio" name="programtype" value="-bin">Programa Binário
+			</div>
+			<br>
+
+			<div class="editor"><textarea id="inputprogram"></textarea></div>
+			<script src="../include/editor.js"></script>
+			<br>
+
+			<div class="center">
+				<button onclick="solveProgram()">Resolver</button>
+				<button onclick="generateExample()">Gerar Exemplo</button>
+				<button onclick="clearSolution()">Limpar Resultado</button>
+			</div>
+			<br>
+
+			<textarea id="outputsolution" wrap="off" class="output" readonly></textarea>
+			<br>
+		</div>
+		
+		<p class="center">Versão 1.2 - 17/05/2015 — <a href="info/atl.html">Verifique aqui o conteúdo da próxima atualização!!</a></p>
+		<p class="center">Por favor, envie feedback por e-mail para <i>solid.judis@gmail.com</i>.</p>
+	</body>
+</html>

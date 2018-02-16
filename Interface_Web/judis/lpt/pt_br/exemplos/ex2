@@ -1,0 +1,4 @@
+min x0 = x1 + 15x2 + 12x3 + 5/2x4 - 2x5
+subject to
+	x1 + x2 >= 5
+	x4 + 1.1x5 <= 3

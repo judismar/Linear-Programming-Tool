@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="charset=UTF-8">
+		<meta name="description" content="A Tool for solving, studying and analysing Linear, Integer and Binary programs">
+		<meta name="keywords" content="Mathematical Programming, Linear Programming, Integer Programming, Binary Programming, Online Web Tool, Online Web Solver">
+		<meta name="author" content="Judismar Arpini Junior">
+
+		<title>Linear Programming Tool: Linear Programming, Integer Programming and Binary Programming</title>
+
+		<link rel="stylesheet" href="../include/codemirror-3.20/lib/codemirror.css?v=1.0">
+		<link rel="stylesheet" href="../include/layoutlpt.css?v=1.11">
+		<script src="../include/codemirror-3.20/lib/codemirror.js?v=1.0"></script> 
+		<script src="../include/codemirror-3.20/octave/octave.js?v=1.12"></script>
+		<script src="../include/mainscript.js?v=1.13"></script>
+	</head>
+	<body>
+		<script>
+			tips = "1) Variables must begin with letters.\n2) All the constants, including fractions, must stay to the left side of the variable (without paretheses).\n3) Unconsider space between operators, numbers and variables..\n4) The operators '+' and '-' can be used to make a constant signed.\n5) Write line comments with '%'.\n6) The 'variable bounds' section is optional. All variable are greather than or equal zero by default.";
+			processing = "Processing...\nProgress: ";
+			errorMessage = "Server error.";
+		</script>
+
+		<h2>Linear Programming Tool</h2>
+
+		<p><a href="../pt_br/ferramentapl.html">Em Português</a></p>
+		<p><a href="../en/">Main Page</a></p>
+		<p><a href="info/">Important Information</a></p>
+
+		<div class="maincomponent">
+			<div class="center">
+				<input type="radio" name="programtype" value="-lin" checked>Linear Program
+				<input type="radio" name="programtype" value="-int">Integer Program
+				<input type="radio" name="programtype" value="-bin">Binary Program
+			</div>
+			<br>
+
+			<div class="editor"><textarea id="inputprogram"></textarea></div>
+			<script src="../include/editor.js"></script>
+			<br>
+
+			<div class="center">
+				<button onclick="solveProgram()">Solve</button>
+				<button onclick="generateExample()">Generate Example</button>
+				<button onclick="clearSolution()">Clear Results</button>
+			</div>
+			<br>
+
+			<textarea id="outputsolution" wrap="off" class="output" readonly></textarea>
+			<br>
+		</div>
+
+		<p class="center">Version 1.2 - 05/17/2015 — <a href="info/upgrades.html">Check on the next upgrade!!</a></p>
+		<p class="center">Please, mail feedback to <i>solid.judis@gmail.com</i>.</p>
+
+	</body>
+</html>

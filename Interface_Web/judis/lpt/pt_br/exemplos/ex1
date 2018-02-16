@@ -1,0 +1,7 @@
+max f = x + y - 2.3z
+s.t.
+	x + y >= 1
+	z = 1
+	x + y - z <= 10/3
+v.b. %opcional!
+	y >= 0

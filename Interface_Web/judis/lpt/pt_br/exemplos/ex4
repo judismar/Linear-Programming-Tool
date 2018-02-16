@@ -1,0 +1,9 @@
+min custodieta = 2 qtdleite + 4 qtdcarne + 1.5 qtdpeixe + 1 qtdsalada %custo em reais; cada constante representa o preço da unidade de cada alimento
+
+subject to %as constantes nas restrições representam a quantidade de cada vitamina em mg
+
+2 qtdleite + 2 qtdcarne + 10 qtdpeixe + 20 qtdsalada >= 11 %pelo menos 11mg de Vitamina A
+50 qtdleite + 20 qtdcarne + 10 qtdpeixe + 30 qtdsalada >= 70 %pelo menos 70mg de Vitamina B
+80 qtdleite + 70 qtdcarne + 10 qtdpeixe + 80 qtdsalada >= 250 %pelo menos 250mg de Vitamina C
+
+%A medida da quantidade de cada alimento não está explícito aqui
